@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iframe's demo app</title>
+</head>
+<body ng-app="iframeApp">
+
+<ul class="list-group" ng-controller="iframeCtrl">
+  <li class="list-group-item" ng-repeat="website in websites">
+    <div ng-repeat="(key, value) in website">
+      <input type="button"
+             class="btn btn-default btn-sm pull-right"
+             ng-value="(value.visibility ? 'Close ' : 'Launch ') + value.name"
+             ng-click="value.visibility = !value.visibility">
+      <br>
+      <iframe ng-if="value.visibility"
+              ng-src="{{value.url}}">
+      </iframe>
+    </div>
+  </li>
+</ul>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+<script src="static/app.js"></script>
+</body>
+</html>
