@@ -1,3 +1,6 @@
-ng-samples: AngularJS single-page app examples:
+## ng-samples
 
-* iframes: Simple example of how to use AngularJS to display different iframes.
+Mini samples:
+
+* preview: How to use AngularJS to preview/filter an input text using AngularJS two way binding.
+* iframes: How to use AngularJS to display different iframes.

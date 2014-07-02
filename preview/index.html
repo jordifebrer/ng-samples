@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Preview's demo app</title>
+</head>
+<body ng-app="previewApp" ng-controller="previewCtrl">
+Enter your nickname:
+<input name="nickname"
+       type="text"
+       size="60"
+       ng-model="nickname">
+</input>
+<p><b>Preview:</b> {{nickname}}</p>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+<script src="static/app.js"></script>
+</body>
+</html>
